@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ebc2a933-5edf-4609-83fd-1e96f20a41a6}</ProjectGuid>
+    <RootNamespace>NDBI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>code\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>code\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" EADSy.exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="code\numeric\dft\CBluesteinFFT.cpp" />
+    <ClCompile Include="code\numeric\dft\CBluesteinFilter.cpp" />
+    <ClCompile Include="code\numeric\dft\CCooleyTukeyFFT.cpp" />
+    <ClCompile Include="code\numeric\dft\CCooleyTukeyFilter.cpp" />
+    <ClCompile Include="code\numeric\dft\CFourierFilter.cpp" />
+    <ClCompile Include="code\numeric\dft\CRealDFT.cpp" />
+    <ClCompile Include="code\numeric\dft\CRealRiemannSumFT.cpp" />
+    <ClCompile Include="code\numeric\linalg\CCMDataManager.cpp" />
+    <ClCompile Include="code\numeric\linalg\CCMLUDecomposer.cpp" />
+    <ClCompile Include="code\numeric\linalg\CCMMatrix.cpp" />
+    <ClCompile Include="code\numeric\linalg\CCMVector.cpp" />
+    <ClCompile Include="code\numeric\linalg\solver\CCholeskySolver.cpp" />
+    <ClCompile Include="code\numeric\linalg\solver\CGivensNES.cpp" />
+    <ClCompile Include="code\numeric\linalg\solver\CLinearEquationSolver.cpp" />
+    <ClCompile Include="code\numeric\newton\CErrorSquareNorm_NES.cpp" />
+    <ClCompile Include="code\numeric\newton\CNewtonEquationInterface.cpp" />
+    <ClCompile Include="code\numeric\newton\CNewtonEquationSolver.cpp" />
+    <ClCompile Include="code\numeric\newton\CResidualSquareNorm_NES.cpp" />
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CBoxMillerRNG.cpp" />
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer39373RNG.cpp" />
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer40014RNG.cpp" />
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer40692RNG.cpp" />
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CUniformRNG.cpp" />
+    <ClCompile Include="code\pipeline\CPipelineElement.cpp" />
+    <ClCompile Include="code\pipeline\CPipelineOperator.cpp" />
+    <ClCompile Include="code\pipeline\CPullEnd.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CFiniteDiff.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CFriedrichsMollifierNumeric.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CFriedrichsMollifierWeak.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CNoiseAdder.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CSpectralLowpass.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\CTangentRegression.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\integration\CDifferentiationByIntegration.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\integration\CHermiteUnivariatePolynomial.cpp" />
+    <ClCompile Include="code\pipeline\datapreparation\integration\CMultivariateHermiteSeries.cpp" />
+    <ClCompile Include="code\pipeline\datastructures\CDEData.cpp" />
+    <ClCompile Include="code\pipeline\datastructures\CPipelineData.cpp" />
+    <ClCompile Include="code\pipeline\datastructures\CResultData.cpp" />
+    <ClCompile Include="code\pipeline\de\CDE.cpp" />
+    <ClCompile Include="code\pipeline\de\CDEFactory.cpp" />
+    <ClCompile Include="code\pipeline\de\CDEMonomeTerm.cpp" />
+    <ClCompile Include="code\pipeline\de\CDETerm.cpp" />
+    <ClCompile Include="code\pipeline\estimation\CEntropyMinCalculator.cpp" />
+    <ClCompile Include="code\pipeline\estimation\CMaxELLHCalculator.cpp" />
+    <ClCompile Include="code\pipeline\estimation\CStepDownSubsampler.cpp" />
+    <ClCompile Include="code\pipeline\estimation\parameter\CLeaveOneOutEstimator.cpp" />
+    <ClCompile Include="code\pipeline\estimation\parameter\equationsystems\CEquationSystem.cpp" />
+    <ClCompile Include="code\pipeline\estimation\parameter\equationsystems\CLotkaVolterra.cpp" />
+    <ClCompile Include="code\pipeline\io\CDataSink.cpp" />
+    <ClCompile Include="code\pipeline\io\CDataSource.cpp" />
+    <ClCompile Include="code\util\CEADSyConfig.cpp" />
+    <ClCompile Include="code\util\CEADSyException.cpp" />
+    <ClCompile Include="code\util\CFileReader.cpp" />
+    <ClCompile Include="code\util\CFileWriter.cpp" />
+    <ClCompile Include="code\util\CLog.cpp" />
+    <ClCompile Include="code\util\CSubDirFileFilter.cpp" />
+    <ClCompile Include="EADSy.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\numeric\dft\CBluesteinFFT.h" />
+    <ClInclude Include="code\numeric\dft\CBluesteinFilter.h" />
+    <ClInclude Include="code\numeric\dft\CCooleyTukeyFFT.h" />
+    <ClInclude Include="code\numeric\dft\CCooleyTukeyFilter.h" />
+    <ClInclude Include="code\numeric\dft\CFourierFilter.h" />
+    <ClInclude Include="code\numeric\dft\CRealDFT.h" />
+    <ClInclude Include="code\numeric\dft\CRealRiemannSumFT.h" />
+    <ClInclude Include="code\numeric\linalg\CCMDataManager.h" />
+    <ClInclude Include="code\numeric\linalg\CCMLUDecomposer.h" />
+    <ClInclude Include="code\numeric\linalg\CCMMatrix.h" />
+    <ClInclude Include="code\numeric\linalg\CCMVector.h" />
+    <ClInclude Include="code\numeric\linalg\solver\CCholeskySolver.h" />
+    <ClInclude Include="code\numeric\linalg\solver\CGivensNES.h" />
+    <ClInclude Include="code\numeric\linalg\solver\CLinearEquationSolver.h" />
+    <ClInclude Include="code\numeric\newton\CErrorSquareNorm_NES.h" />
+    <ClInclude Include="code\numeric\newton\CNewtonEquationInterface.h" />
+    <ClInclude Include="code\numeric\newton\CNewtonEquationSolver.h" />
+    <ClInclude Include="code\numeric\newton\CResidualSquareNorm_NES.h" />
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CBoxMillerRNG.h" />
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer39373RNG.h" />
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer40014RNG.h" />
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer40692RNG.h" />
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CUniformRNG.h" />
+    <ClInclude Include="code\pipeline\CPipelineElement.h" />
+    <ClInclude Include="code\pipeline\CPipelineOperator.h" />
+    <ClInclude Include="code\pipeline\CPullEnd.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CFiniteDiff.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CFriedrichsMollifierNumeric.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CFriedrichsMollifierWeak.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CNoiseAdder.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CSpectralLowpass.h" />
+    <ClInclude Include="code\pipeline\datapreparation\CTangentRegression.h" />
+    <ClInclude Include="code\pipeline\datapreparation\integration\CDifferentiationByIntegration.h" />
+    <ClInclude Include="code\pipeline\datapreparation\integration\CHermiteUnivariatePolynomial.h" />
+    <ClInclude Include="code\pipeline\datapreparation\integration\CMultivariateHermiteSeries.h" />
+    <ClInclude Include="code\pipeline\datastructures\CDEData.h" />
+    <ClInclude Include="code\pipeline\datastructures\CPipelineData.h" />
+    <ClInclude Include="code\pipeline\datastructures\CResultData.h" />
+    <ClInclude Include="code\pipeline\de\CDE.h" />
+    <ClInclude Include="code\pipeline\de\CDEFactory.h" />
+    <ClInclude Include="code\pipeline\de\CDEMonomeTerm.h" />
+    <ClInclude Include="code\pipeline\de\CDETerm.h" />
+    <ClInclude Include="code\pipeline\estimation\CEntropyMinCalculator.h" />
+    <ClInclude Include="code\pipeline\estimation\CMaxELLHCalculator.h" />
+    <ClInclude Include="code\pipeline\estimation\CStepDownSubsampler.h" />
+    <ClInclude Include="code\pipeline\estimation\parameter\CLeaveOneOutEstimator.h" />
+    <ClInclude Include="code\pipeline\estimation\parameter\equationsystems\CEquationSystem.h" />
+    <ClInclude Include="code\pipeline\estimation\parameter\equationsystems\CLotkaVolterra.h" />
+    <ClInclude Include="code\pipeline\io\CDataSink.h" />
+    <ClInclude Include="code\pipeline\io\CDataSource.h" />
+    <ClInclude Include="code\util\CEADSyConfig.h" />
+    <ClInclude Include="code\util\CEADSyException.h" />
+    <ClInclude Include="code\util\CFileReader.h" />
+    <ClInclude Include="code\util\CFileWriter.h" />
+    <ClInclude Include="code\util\CLog.h" />
+    <ClInclude Include="code\util\CSubDirFileFilter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

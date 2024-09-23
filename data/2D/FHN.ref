@@ -1,0 +1,7 @@
+ComponentNo;ParameterNo;ParameterMonome;ParameterValue
+0;1;x_1;3.0
+0;2;x_2;3.0
+0;6;x_1^3;-1.0
+1;0;1;0.0666666
+1;1;x_1;-0.333333
+1;2;x_2;-0.0666666

@@ -1,0 +1,14 @@
+#include "CNewtonEquationInterface.h"
+
+
+//////////////////////////////////////////////////////////////////////
+// Konstruktion/Destruktion
+//////////////////////////////////////////////////////////////////////
+
+CNewtonEquationInterface::CNewtonEquationInterface()
+{
+}
+
+CNewtonEquationInterface::~CNewtonEquationInterface()
+{
+}

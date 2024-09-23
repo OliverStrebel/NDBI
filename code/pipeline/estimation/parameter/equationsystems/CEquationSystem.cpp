@@ -1,0 +1,16 @@
+// CEquationSystem.cpp: Implementierung der Klasse CEquationSystem.
+
+#include "CEquationSystem.h"
+
+//////////////////////////////////////////////////////////////////////
+// Konstruktion/Destruktion
+//////////////////////////////////////////////////////////////////////
+CEquationSystem::CEquationSystem()
+{
+}
+
+CEquationSystem::~CEquationSystem()
+{
+}
+
+

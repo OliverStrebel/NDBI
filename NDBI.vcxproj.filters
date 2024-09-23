@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien\code">
+      <UniqueIdentifier>{30b0c36f-bdae-4fac-be26-5a535e9d5c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\util">
+      <UniqueIdentifier>{57035557-b1dd-43bf-99dd-b893ddc1cd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric">
+      <UniqueIdentifier>{9e70c3c9-27b5-4f68-9d87-0e141d3086bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline">
+      <UniqueIdentifier>{a7826bf2-1639-4851-8a1f-4a0f8f2b2ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\datapreparation">
+      <UniqueIdentifier>{99844b61-1897-419b-8e01-cbb2ccac5eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\datastructures">
+      <UniqueIdentifier>{5ea016be-aba9-4c29-a63f-37a88bb3fd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\de">
+      <UniqueIdentifier>{8611c740-3978-4815-88be-03f5b18459e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\estimation">
+      <UniqueIdentifier>{ae6df82e-6a3e-4d9a-b40b-a908cc899f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\io">
+      <UniqueIdentifier>{a0d70309-6b66-4ed9-b9db-54da1eb74f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\estimation\parameter">
+      <UniqueIdentifier>{8328a6c4-1124-4b31-882a-982010495c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\estimation\parameter\equationsystems">
+      <UniqueIdentifier>{4f148f8d-b4e9-4d13-a321-599cd7926999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\pipeline\datapreparation\integration">
+      <UniqueIdentifier>{3b3a8911-48fa-4bb3-a3a8-9cd73d2e3abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\stochastic">
+      <UniqueIdentifier>{85404258-d20e-45aa-93a9-b8c2ee4367a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\newton">
+      <UniqueIdentifier>{5fbecc17-9c7e-45d0-af48-485352f0fc5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\linalg">
+      <UniqueIdentifier>{214cfe67-9ee2-4ddb-aaf5-c061c6810226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\dft">
+      <UniqueIdentifier>{1c4b5312-87ae-43ac-89ba-508e3417b3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\stochastic\randomnumbers">
+      <UniqueIdentifier>{9f8d21d8-79ab-4422-a33d-1aa61b3c6502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\code\numeric\linalg\solver">
+      <UniqueIdentifier>{a9ed904d-5c64-4db7-aa99-920b6cc286da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EADSy.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CEADSyConfig.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CEADSyException.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CFileReader.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CFileWriter.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CLog.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\util\CSubDirFileFilter.cpp">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\CPipelineElement.cpp">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\CPipelineOperator.cpp">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\CPullEnd.cpp">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\io\CDataSink.cpp">
+      <Filter>Quelldateien\code\pipeline\io</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\io\CDataSource.cpp">
+      <Filter>Quelldateien\code\pipeline\io</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\CEntropyMinCalculator.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\CMaxELLHCalculator.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\CStepDownSubsampler.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\parameter\CLeaveOneOutEstimator.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\parameter\equationsystems\CEquationSystem.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter\equationsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\estimation\parameter\equationsystems\CLotkaVolterra.cpp">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter\equationsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\de\CDE.cpp">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\de\CDEFactory.cpp">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\de\CDEMonomeTerm.cpp">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\de\CDETerm.cpp">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datastructures\CDEData.cpp">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datastructures\CPipelineData.cpp">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datastructures\CResultData.cpp">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CFiniteDiff.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CFriedrichsMollifierNumeric.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CFriedrichsMollifierWeak.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CNoiseAdder.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CSpectralLowpass.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\CTangentRegression.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\integration\CDifferentiationByIntegration.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\integration\CHermiteUnivariatePolynomial.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="code\pipeline\datapreparation\integration\CMultivariateHermiteSeries.cpp">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CBoxMillerRNG.cpp">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer39373RNG.cpp">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer40014RNG.cpp">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CEcuyer40692RNG.cpp">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\stochastic\randomnumbers\CUniformRNG.cpp">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\newton\CErrorSquareNorm_NES.cpp">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\newton\CNewtonEquationInterface.cpp">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\newton\CNewtonEquationSolver.cpp">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\newton\CResidualSquareNorm_NES.cpp">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\CCMDataManager.cpp">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\CCMLUDecomposer.cpp">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\CCMMatrix.cpp">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\CCMVector.cpp">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\solver\CCholeskySolver.cpp">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\solver\CGivensNES.cpp">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\linalg\solver\CLinearEquationSolver.cpp">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CBluesteinFFT.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CBluesteinFilter.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CCooleyTukeyFFT.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CCooleyTukeyFilter.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CFourierFilter.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CRealDFT.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+    <ClCompile Include="code\numeric\dft\CRealRiemannSumFT.cpp">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\util\CEADSyConfig.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\util\CEADSyException.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\util\CFileReader.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\util\CFileWriter.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\util\CLog.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\util\CSubDirFileFilter.h">
+      <Filter>Quelldateien\code\util</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\CPipelineElement.h">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\CPipelineOperator.h">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\CPullEnd.h">
+      <Filter>Quelldateien\code\pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\io\CDataSink.h">
+      <Filter>Quelldateien\code\pipeline\io</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\io\CDataSource.h">
+      <Filter>Quelldateien\code\pipeline\io</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\CEntropyMinCalculator.h">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\CMaxELLHCalculator.h">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\CStepDownSubsampler.h">
+      <Filter>Quelldateien\code\pipeline\estimation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\parameter\CLeaveOneOutEstimator.h">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\parameter\equationsystems\CEquationSystem.h">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter\equationsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\estimation\parameter\equationsystems\CLotkaVolterra.h">
+      <Filter>Quelldateien\code\pipeline\estimation\parameter\equationsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\de\CDE.h">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\de\CDEFactory.h">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\de\CDEMonomeTerm.h">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\de\CDETerm.h">
+      <Filter>Quelldateien\code\pipeline\de</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datastructures\CDEData.h">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datastructures\CPipelineData.h">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datastructures\CResultData.h">
+      <Filter>Quelldateien\code\pipeline\datastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CFiniteDiff.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CFriedrichsMollifierNumeric.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CFriedrichsMollifierWeak.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CNoiseAdder.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CSpectralLowpass.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\CTangentRegression.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\integration\CDifferentiationByIntegration.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\integration\CHermiteUnivariatePolynomial.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="code\pipeline\datapreparation\integration\CMultivariateHermiteSeries.h">
+      <Filter>Quelldateien\code\pipeline\datapreparation\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CBoxMillerRNG.h">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer39373RNG.h">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer40014RNG.h">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CEcuyer40692RNG.h">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\stochastic\randomnumbers\CUniformRNG.h">
+      <Filter>Quelldateien\code\numeric\stochastic\randomnumbers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\newton\CErrorSquareNorm_NES.h">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\newton\CNewtonEquationInterface.h">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\newton\CNewtonEquationSolver.h">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\newton\CResidualSquareNorm_NES.h">
+      <Filter>Quelldateien\code\numeric\newton</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\CCMDataManager.h">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\CCMLUDecomposer.h">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\CCMMatrix.h">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\CCMVector.h">
+      <Filter>Quelldateien\code\numeric\linalg</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\solver\CCholeskySolver.h">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\solver\CGivensNES.h">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\linalg\solver\CLinearEquationSolver.h">
+      <Filter>Quelldateien\code\numeric\linalg\solver</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CBluesteinFFT.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CBluesteinFilter.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CCooleyTukeyFFT.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CCooleyTukeyFilter.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CFourierFilter.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CRealDFT.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+    <ClInclude Include="code\numeric\dft\CRealRiemannSumFT.h">
+      <Filter>Quelldateien\code\numeric\dft</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
