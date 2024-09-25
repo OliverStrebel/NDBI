@@ -28,8 +28,7 @@ void CLotkaVolterra::setRegressionMatrix(CCMMatrix& A, int iRow, int iComp, int 
     if (iComp == 0)
     {
         A.setElement(iRow, 0, aDEDState.get(1, iDataRow));
-        A.setElement(iRow, 1, aDEDState.get(1, iDataRow) * aDEDState.get(1, iDataRow));
-        A.setElement(iRow, 2, aDEDState.get(1, iDataRow) * aDEDState.get(2, iDataRow));
+        A.setElement(iRow, 1, aDEDState.get(1, iDataRow) * aDEDState.get(2, iDataRow));
     }
     else if (iComp == 1)
     {
@@ -41,8 +40,7 @@ void CLotkaVolterra::setRegressionMatrix(CCMMatrix& A, int iRow, int iComp, int 
 
 int CLotkaVolterra::getParameterCount(int iComp)
 {
-    if (iComp == 0) return 3;
-    else if (iComp == 1) return 2;
+    if (iComp <= 1) return 2;
     else throw CEADSyException("CLotkaVolterra::getParameterCount: Invalid component number");
 }
 /*
