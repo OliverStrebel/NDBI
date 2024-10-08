@@ -8,7 +8,6 @@
 
 #include "numeric/linalg/CCMVector.h"
 #include "numeric/linalg/CCMMatrix.h"
-#include "numeric/linalg/solver/CCholeskySolver.h"
 
 #include "util/CEADSyException.h"
 #include "util/CLog.h"
