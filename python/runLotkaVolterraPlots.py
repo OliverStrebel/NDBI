@@ -13,7 +13,7 @@ import graphs.lotkaVolterraDeriv as deriv
 
 
 data = numpy.loadtxt(open("../data/experimental/LynxHareHudsonBay_1900_1920.txt"), delimiter=' ', skiprows=1)
-par = numpy.loadtxt(open("../data/experimental/AS_IS/DIFFERENTIATION_BY_INTEGRATION/LynxHareHudsonBay_1900_1920.txt"), delimiter=' ')
+par = numpy.loadtxt(open("../data/experimental/AS_IS/DIFFERENTIATION_BY_INTEGRATION/PAR_LOO_LynxHareHudsonBay_1900_1920_0000000000.RES"), delimiter=' ')
 ad = AlgoData(data[:,0], data[:,1:3], par)
 integrator = ImplicitEuler()
 x_pre, x_preLine = integrator.run(ad)
