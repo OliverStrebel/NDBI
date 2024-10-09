@@ -37,7 +37,7 @@ def scanGraphics(ar, scalefactor, out='graphs'):
                  linestyle='dotted')
         i=i+1
 
-    plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.1),
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15),
                ncol=3, fancybox=False, shadow=False)
     if scalefactor < 0.9: plt.savefig(out + '/meanRelativeDeviationPerDataPointNoise.jpeg')
     else: plt.savefig(out + '/meanRelativeDeviationPerDataPointSkip.jpeg')
